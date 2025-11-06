@@ -38,4 +38,4 @@ O Backend é feito por uma API utilizando Laravel e PostgreSQL, com as seguintes
 ```
 * [DELETE] http://localhost:8000/api/excluirContato/{id} deleta um contato específico. 
 
-Foi utilizado o Insomnia para auxiliar no desenvolvimento e testes das rotas. O arquivo com as chamdas do insmonia exportadas está ja raíz do projeto.
+Foi utilizado o Insomnia para auxiliar no desenvolvimento e testes das rotas. O arquivo com as chamdas do insmonia exportadas está na raíz do projeto.
