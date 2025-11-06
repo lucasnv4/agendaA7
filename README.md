@@ -11,9 +11,9 @@ docker-compose up -d
 
 ## Interface
 Interface acessível pelo caminho http://localhost:5173. 
-Dividia em duas partes:
-A primeira com campos editáveis, onde é possível cadastrar novos contatos ou editar existentes (se  foi selecionado para editar previamente). Necessário clicar em Adicionar ou Atualizar para as alterações fazerem Efeito.
-A segunda parte é uma tabela com a lista de contatos, e a opção de editar ou excluir cada contato. Ao clicar em editar, seus dados serão copiados para a area de edição e é permitida a alterações dos dados do respectivo contato.
+Divida em duas partes:
+* A primeira com campos editáveis, onde é possível cadastrar novos contatos ou editar existentes (se  foi selecionado para editar previamente). Necessário clicar em Adicionar ou Atualizar para as alterações fazerem Efeito.
+* A segunda parte é uma tabela com a lista de contatos, e a opção de editar ou excluir cada contato. Ao clicar em editar, seus dados serão copiados para a area de edição e é permitida a alterações dos dados do respectivo contato.
 
 ## API
 O Backend é feito por uma API utilizando Laravel e PostgreSQL, com as seguintes rotas:
