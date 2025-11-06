@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: ./laravel
+    container_name: laravel_app
+    volumes:
+      - ./laravel:/var/www/html
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DB_CONNECTION=pgsql
+      - DB_HOST=db
+      - DB_PORT=5432
+      - DB_DATABASE=agenda
+      - DB_USERNAME=agendaA7
+      - DB_PASSWORD=1&4_7lV
+    command: php artisan serve --host=0.0.0.0 --port=8000
+    networks:
+      - laravel_net
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    environment:
+      - POSTGRES_DB=agenda
+      - POSTGRES_USER=agendaA7
+      - POSTGRES_PASSWORD=1&4_7lV
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - laravel_net
+
+networks:
+  laravel_net:
+
+volumes:
+  pgdata:
