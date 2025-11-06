@@ -18,7 +18,7 @@ services:
       - DB_DATABASE=agenda
       - DB_USERNAME=agendaA7
       - DB_PASSWORD=1&4_7lV
-    command: php artisan serve --host=0.0.0.0 --port=8000
+    command: bash -c "php artisan optimize && php artisan serve --host=0.0.0.0 --port=8000"
     networks:
       - laravel_net
   db:
