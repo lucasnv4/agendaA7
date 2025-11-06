@@ -1,0 +1,133 @@
+type: collection.insomnia.rest/5.0
+name: Agenda
+meta:
+  id: wrk_cfb8376c9e424f65973706e2eb5ebdb3
+  created: 1762442294791
+  modified: 1762461184513
+  description: ""
+collection:
+  - url: http://localhost:8000/api/criarContato
+    name: criarContato
+    meta:
+      id: req_a73aa177cda9422ebd732b0673ad4d2b
+      created: 1762442294846
+      modified: 1762461168652
+      isPrivate: false
+      description: ""
+      sortKey: -1762442294846
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "Nome": "Lucas 2",
+          "Email": "lucasnv4@gmail.com",
+          "Endereco": "Rua iguaçu, 489",
+          "Telefone": "47984654358"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.0.0
+        id: pair_9a28facea6904e76b1d47e43bf56d9ee
+      - id: pair_40ca03e3712c42fe91e2ddd3b86ac608
+        name: "Content-Type "
+        value: application/json
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8000/api/contatos
+    name: listagem
+    meta:
+      id: req_ed71b74ba9b34dcf9ea00b55e1ff5245
+      created: 1762445699461
+      modified: 1762461154831
+      isPrivate: false
+      description: ""
+      sortKey: -1762445699461
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8000/api/atualizarContato/2
+    name: atualizarContato
+    meta:
+      id: req_a88e15bc0d17468b81b141f30395e7d5
+      created: 1762446884560
+      modified: 1762461147748
+      isPrivate: false
+      description: ""
+      sortKey: -1762446884560
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "Nome": "Lucas Nadolny Vizentainer",
+          "Email": "lucasnv4@gmail.com",
+          "Endereco": "Rua iguaçu, 489",
+          "Telefone": "47984654358"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8000/api/excluirContato/2
+    name: excluirContato
+    meta:
+      id: req_af736fae88e945f28c1f939a1fbdb942
+      created: 1762446967025
+      modified: 1762461139357
+      isPrivate: false
+      description: ""
+      sortKey: -1762446967025
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.0.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_9efd166458ab6e96e8bff6407568b7b50fda68c8
+    created: 1762442294793
+    modified: 1762442294793
+environments:
+  name: Base Environment
+  meta:
+    id: env_9efd166458ab6e96e8bff6407568b7b50fda68c8
+    created: 1762442294792
+    modified: 1762442294792
+    isPrivate: false
